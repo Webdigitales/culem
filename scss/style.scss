@@ -5,9 +5,10 @@ body {
     font-family: 'Open Sans', Helvetica sans-serif;
 
     .header {
-        height: 400px;
-        background: url("../img/bg-header.jpg") center center no-repeat;
-        background-size: cover;
+        height: 200px;
+        /*background: url("../img/bg-header.jpg") center center no-repeat;
+        background-size: cover;*/
+        background-color: $brand-primary;
 
         .container, .container > .row, .col-sm-12 {
             height: 100%;
