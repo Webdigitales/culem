@@ -24,6 +24,32 @@
 
   <!--Viewport-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#29ABE3",
+            "text": "#ffffff"
+          },
+          "button": {
+            "background": "#ffffff",
+            "text": "#000000"
+          }
+        },
+        "type": "info",
+        "content": {
+          "message": "Ce site utilise des \"cookies\" pour vous assurer d'obtenir la meilleure expérience.",
+          "dismiss": "J'accepte !",
+          "allow": "J'accepte !",
+          "link": "En savoir plus",
+          "href": "cookies.html"
+        }
+      })});
+  </script>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -31,7 +57,7 @@
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W5NGL7D');</script>
-    <!-- End Google Tag Manager -->
+  <!-- End Google Tag Manager -->
 
 </head>
 
@@ -44,7 +70,7 @@
     <header class="header">
       <section class="logo">
         <div class="img-logo">
-          <img src="img/logo.svg" alt="Horecatech">
+          <a href="/"><img src="img/logo.svg" alt="Chauffage Culem"></a>
         </div>
       </section>
     </header>
@@ -82,8 +108,27 @@
           </div>
         </div>
       </div>
+      <section class="gallery">
+        <section class="gallery-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-3 gallery-item">
+                <a class="gallery-item-select" href="img/img-1.jpg"><img src="img/img-1.jpg" alt="magasin bonbon chic durbuy"></a>
+              </div>
+              <div class="col-sm-3 gallery-item">
+                <a class="gallery-item-select" href="img/img-2.jpg"><img src="img/img-2.jpg" alt="magasin bonbon chic durbuy"></a>
+              </div>
+              <div class="col-sm-3 gallery-item">
+                <a class="gallery-item-select" href="img/img-3.jpg"><img src="img/img-3.jpg" alt="magasin bonbon chic durbuy"></a>
+              </div>
+              <div class="col-sm-3 gallery-item">
+                <a class="gallery-item-select" href="img/img-4.jpg"><img src="img/img-4.jpg" alt="magasin bonbon chic durbuy"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
-
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -109,6 +154,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="javascript/bootstrap-sprockets.js"></script>
   <script src="javascript/bootstrap.js"></script>
+  <script src="javascript/magnific_popup.js"></script>
+  <script>
+    $(document).ready(function () {
+      // magnific popup
+      $('.image-link').magnificPopup({type: 'image'});
+
+      $('.gallery-item-select').magnificPopup({
+        type: 'image'
+        //other options
+      });
+    });
+  </script>
 </body>
 
 </html>

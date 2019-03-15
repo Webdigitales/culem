@@ -96,6 +96,26 @@ body {
         }
     }
 
+    .gallery {
+        padding-top: 35px;
+        h2 {
+            font-size: 1.5em;
+            max-width: 400px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+        .gallery-content{
+            .gallery-item {
+                padding-bottom: 15px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            }
+        }
+    }
+
     .footer {
         margin-top: 10px;
         background-color: $footer-bg;
