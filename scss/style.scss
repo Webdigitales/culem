@@ -5,8 +5,7 @@ body {
     font-family: 'Open Sans', Helvetica sans-serif;
 
     .header {
-        height: 200px;
-        background: url("../img/bg-header.jpg") center center no-repeat;
+        height: 150px;
         background-size: cover;
         background-color: $brand-primary;
 
@@ -21,7 +20,7 @@ body {
             align-items: flex-end;
 
             .img-logo {
-                max-width: 250px;
+                max-width: 340px;
                 background-color: #fff;
                 padding: 20px;
                 display: flex;
@@ -45,6 +44,7 @@ body {
         font-weight: 700;
         font-size: 12px;
         box-shadow: 0 2px 4px rgba(0,0,0, .16);
+        color: #fff;
 
         &:hover {
             color: $btn-color-hover;
@@ -150,5 +150,9 @@ body {
         .header, .main, .footer {
             flex: 1 1 100%;
         }
+    }
+    
+    footer.footer {
+        padding-bottom: 20px;
     }
 }
